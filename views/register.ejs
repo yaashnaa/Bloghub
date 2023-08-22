@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="../Form.css" /> -->
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include ('navbar.ejs') %>
+  
+    <div class="register-form">
+        <div class="eight">
+            <h1>Register</h1>
+          </div>
+      <div class="form">
+        <form action="/register" method="POST">
+          <div class="form">
+            <label class="label" for="name"> Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email"> Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="password"> Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="cta">
+            <div class="btn-cta">
+              <button class="button-36" role="button" type="submit">
+                Register
+              </button>
+              <a href="/login">
+                <div class="btn-36-div"> Login</div>
+                </a>
+           
+            </div>
+          </div>
+          <!-- <button type="submit">Register</button> 
+          or <br> 
+          <a href="/login"> <button>Login</button> </a> -->
+        </form>
+      </div>
+    </div>
+
+
+<script>
+  // Function to get the value of a specific query parameter from the URL
+  function getQueryParameter(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const userExists = getQueryParameter('exists');
+    if (userExists === 'true') {
+      // Show an alert indicating that the user already exists
+      alert('Username already exists. Please choose a different username.');
+    }
+  });
+</script>
+
+  </body>
+</html>

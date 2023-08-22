@@ -1,0 +1,54 @@
+<div class="new-input"> 
+  <div class="input-1">
+    <label for="'title"> Title </label>
+    <input
+      required
+      type="text"
+      value="<%= article.title %>"
+      name="title"
+      id="title"
+    />
+  </div>
+  
+     <div class="input-1">
+      <label for="markdown">Content</label>
+      <textarea
+        class="markdown-input"
+        required
+        name="markdown"
+        id="markdown"
+        rows="8" 
+      ><%= article.markdown %></textarea>
+    </div>
+    <div class="input-1" style="font-size: 2rem;">
+      <label for="tags">Tags</label>
+      <select class="tags-input" name="tags" id="tags">
+        <option value="">Select a Tag</option>
+        <option value="Gaming" <% if (article.tags && article.tags.includes('tag1')) { %>selected<% } %>> Gaming</option>
+        <option value="Travel" <% if (article.tags && article.tags.includes('Travel')) { %>selected<% } %>>Travel</option>
+        <option value="Food" <% if (article.tags && article.tags.includes('Food')) { %>selected<% } %>>Food</option>
+        <option value="Science" <% if (article.tags && article.tags.includes('Science')) { %>selected<% } %>>Science</option>
+        <option value="Art" <% if (article.tags && article.tags.includes('Art')) { %>selected<% } %>>Art</option>
+        <option value="Entertainment" <% if (article.tags && article.tags.includes('Entertainment')) { %>selected<% } %>>Entertainment</option>
+        <option value="Culture" <% if (article.tags && article.tags.includes('Culture')) { %>selected<% } %>>Culture</option>
+        <option value="Buisness" <% if (article.tags && article.tags.includes('Buisness')) { %>selected<% } %>>Buisness</option>
+        <option value="Other" <% if (article.tags && article.tags.includes('Other')) { %>selected<% } %>>Other</option>
+      </select>
+    </div>
+    
+    
+  <div class="buttons-new">
+      <button class="button-35" style="flex: 1" type="submit">Submit</button>
+    <a href="/">
+      <div class="btn-36-div" style="flex: 1; background-color: #E8B4AE;">
+        Cancel
+      </div>
+    </a>
+   
+  </div>
+  
+</div>
+
+
+  
+  

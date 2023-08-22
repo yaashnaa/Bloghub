@@ -1,0 +1,38 @@
+<!-- views/articles/myblogs.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Other head elements... -->
+  <title>My Blogs</title>
+</head>
+<body>
+  <%- include('../navbar.ejs') %>
+  <h1 style="text-align: center; margin-top: 5vh;">My Blogs</h1>
+  <div class="articles-div">
+    <div class="article">
+      <% if (articles && articles.length > 0) { %>
+        <% articles.forEach(article => { %>
+          <div class="article-content-blogs">
+            <div class="title"><%= article.title %></div>
+            <div class="description"><%= article.description %></div>
+            <div class="date">Published on <%= article.createdAt.toLocaleDateString() %></div>
+            <div class="buttons" style="margin-top: 2vh">
+              <a href="/articles/edit/<%= article.id %>">
+                <button class="button-35">Edit</button>
+              </a>
+              <a href="/articles/<%= article.slug %>">
+                <button class="button-35">Read more</button>
+              </a>
+            </div>
+          </div>
+          <div class="line"></div>
+        <% }) %>
+      <% } else { %>
+        <div>No articles found.</div>
+      <% } %>
+    </div>
+  </div>
+</body>
+</html>

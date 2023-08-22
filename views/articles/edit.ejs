@@ -1,0 +1,23 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <%- include ('../navbar.ejs') %>
+    <div class="articles-div">
+      <div class="article">
+        <div class="article-content-blogs">
+          <h1> Edit article</h1>
+          <form action="/articles/<%= article.id %>?_method=PUT" method="POST">
+            <%-include('_forms_fields') %>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

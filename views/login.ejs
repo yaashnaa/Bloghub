@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include ('navbar.ejs') %>
+
+    <div class="register-form">
+      <div class="eight">
+        <h1>Login</h1>
+      </div>
+      <div class="form">
+        <form action="/login" method="POST">
+          <div class="form">
+            <label for="email"> Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="password"> Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="cta">
+            <div class="btn-cta">
+              <button class="button-36" role="button" type="submit">
+                Login
+              </button>
+              <a href="/register">
+                <div class="btn-36-div">Register</div>
+              </a>
+            </div>
+          </div>
+          <!-- <button type="submit">Register</button> 
+          or <br> 
+          <a href="/login"> <button>Login</button> </a> -->
+        </form>
+      </div>
+    </div>
+    <!-- Your login page HTML content -->
+<!-- ... -->
+
+<script>
+  // Function to get the value of a specific query parameter from the URL
+  function getQueryParameter(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const loginError = getQueryParameter('error');
+    if (loginError === 'true') {
+      // Show an error message indicating wrong password
+      alert('Incorrect email or password. Please try again.');
+    }
+  });
+</script>
+
+  </body>
+</html>

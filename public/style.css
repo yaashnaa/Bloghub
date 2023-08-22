@@ -1,0 +1,870 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Raleway:wght@200&display=swap");
+
+:root {
+  --text: rgb(6, 14, 14);
+  --background: rgb(255, 255, 255);
+  --primary: rgb(201, 136, 130);
+  --secondary: rgb(240, 240, 240);
+  --accent: #f85866;
+  --accent-rgb: rgb(248, 88, 102, 0.8);
+  --grey: color: #888;
+  --title: font-family: 'Work Sans', sans-serif;
+  --maintext: font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+}
+
+.navbar {
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+  font-family: var(--title)
+}
+
+.nav-btn a {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+}
+
+.nav-btn {
+  background-color: var(--secondary);
+  border: none;
+  font-size: 1.7rem;
+  padding: 1.5rem;
+  font-family: "Borel", cursive;
+  font-family: "Raleway", sans-serif;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: var(--primary);
+  text-decoration: underline var(--primary);
+}
+.navbar-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav .nav-btn {
+  display: flex;
+  justify-content: left;
+  font-family: "Noto Sans Vithkuqi", sans-serif;
+  /* text-decoration: underline var(--primary); */
+}
+
+.hero-banner {
+  height: 70vh;
+  display: flex;
+}
+
+.img-div {
+  /* flex: 1; */
+  /* width: 60%; */
+  height: 100%;
+}
+
+.img {
+  /* flex: 1; */
+  /* width: 100%; */
+  height: 100%;
+}
+
+.heading {
+  /* flex: 1; */
+  text-align: left;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-right: 1.5rem; */
+}
+.typewriter {
+  display: block;
+  color: #000000;
+  font-size: 3.7rem;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--primary);
+  }
+}
+
+.two h1 {
+  text-transform: capitalize;
+}
+.two h1:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 10rem;
+  height: 0.3rem;
+  content: "";
+  background-color: var(--accent);
+}
+
+.alt-two h1 {
+  text-align: center;
+}
+.alt-two h1:before {
+  left: 50%;
+  margin-left: -30px;
+}
+
+h1 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 10rem;
+  color: #080808;
+  text-align: left;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+h1 span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* CSS */
+.button-36 {
+  background-image: linear-gradient(
+    92.88deg,
+    rgb(220, 149, 142) 9.16%,
+    rgb(210, 143, 138) 43.89%,
+    rgb(198, 133, 127) 64.72%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: var(--primary) 0 1px 30px;
+  transform: scale(1.1);
+  transition-duration: 0.1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+
+.btn-36-div {
+  background-image: linear-gradient(
+    92.88deg,
+    rgb(220, 149, 142) 9.16%,
+    rgb(210, 143, 138) 43.89%,
+    rgb(198, 133, 127) 64.72%
+  );
+  display: flex;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  align-items: center;
+  text-align: center;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: underline
+    linear-gradient(92.88deg, #556ec7 9.16%, #7c6ce2 43.89%, #8f6cee 64.72%);
+}
+
+a {
+  text-decoration-line: none;
+  /*OR*/
+  text-decoration: none;
+}
+.btn-36-div:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transform: scale(1.1);
+  transition-duration: 0.1s;
+}
+
+@media (min-width: 768px) {
+  .btn-36-div {
+    padding: 0 2.6rem;
+  }
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn-cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 2px solid black;
+  width: 25%;
+  height: 60vh;
+  padding: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+input {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 2.5vh;
+  margin-bottom: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+label {
+  text-align: left;
+  font-size: 1.5rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.articles-div {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  /* padding-right: 2rem; */
+  /* border: #080808 solid 0.2rem; */
+  width: 60%;
+
+}
+
+.description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Add a fixed width or max-width if needed */
+  /* width: 200px; */
+  /* max-width: 300px; */
+}
+
+.markdown-input {
+  height: 30vh;
+  font-size: 1.7rem;
+  font-family: "Raleway", sans-serif;
+  /* align-items: flex-start;
+  align-self: flex-start;
+  justify-content: start left; */
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7rem;
+  /* border-bottom: 1px solid #000000; */
+  /* margin-bottom: 20px; */
+}
+
+/* CSS */
+.button-35 {
+  align-items: center;
+  margin-left: 2rem;
+  background-color: #d1aee8;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.delete {
+  /* position:absolute; */
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.delete:hover {
+  transform: scale(1.1);
+  border: #080808 solid 1px;
+}
+
+.date {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 1vh;
+  font-family: "Raleway", sans-serif;
+  margin-top: 1vh;
+  font-size: 1.3rem;
+}
+
+.author-info {
+  color: #888;
+  margin-bottom: 2vh;
+  font-family: "Raleway", sans-serif;
+  margin-top: 1vh;
+  font-size: 1.3rem;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-start;
+}
+
+.article-content {
+  display: flex;
+  margin-bottom: 2vh;
+  /* margin: 3rem; */
+  border: #000000 2px solid;
+  /* padding: 2rem; */
+}
+.article-content-blogs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  /* margin: 3rem; */
+  border: #000000 2px solid;
+  padding: 2rem;
+}
+
+
+.buttons-new {
+  display: flex;
+  width: 10%;
+  gap: 2rem;
+  margin-top: 2vh;
+}
+.title {
+  font-size: 3rem;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  text-transform: capitalize;
+  font-family:  'Work Sans', sans-serif;
+}
+
+.title-delete {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  width: 100%;
+  background-color: black;
+  height: 0.1rem;
+  margin: 0;
+  padding: 0;
+  margin-top: 3vh;
+}
+
+.waviy {
+  text-align: center;
+  position: relative;
+  margin: 8vh;
+  margin-bottom: 15vh;
+  -webkit-box-reflect: below -40px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 5rem;
+}
+.waviy span {
+  font-family: "Borel", cursive;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #000000;
+  text-transform: uppercase;
+  animation: waviy 1s 10s;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+textarea {
+  width: 100%;
+  height: 30vh;
+  resize: none;
+  border: #000000 0.1rem solid;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  padding: 0.6rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.description {
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7rem;
+}
+
+.features {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  align-items: center;
+
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.features-box {
+  flex: 1;
+  display: flex;
+  padding: 4rem;
+  
+
+
+}
+.feature-heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+
+}
+.feature {
+  flex: 1;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  /* border: #000000 2px solid; */
+  margin: 4rem;
+  padding: 4rem;
+  border-radius: 10px 10px;
+  flex-direction: column;
+  background-color: var(--secondary);
+  /* height: fit-content; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.blogs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  /* align-items: center; */
+  margin: 0 auto;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+}
+
+.blog{
+  display: flex;
+  flex-direction: row;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  /* margin: 1.5rem; */
+  margin-bottom: 4rem;
+  /* padding: 2rem; */
+  border-radius: 10px;
+  /* align-items: center; */
+  background-color: rgb(240, 238, 238);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+   
+
+}
+.blog-div{
+  flex: 1;
+  margin-right: 2rem;
+  height: 100%;
+  /* display: flex;
+  flex-direction: row; */
+}
+.blog-heading{
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-content{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.img-blog{
+  height: 18vh;
+  width: 18vh;
+  margin-left: 1rem;
+}
+
+.readmore{
+  font-size: 1rem;
+  color: var(--accent);
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.readmore:hover{
+  text-decoration: underline black;
+}
+
+.big-blog{
+  flex: 1;
+  height: 100%;
+  border-radius: 10px;
+  height: fit-content;
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(240, 238, 238);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+ 
+}
+
+.img-blog-big{
+  height: 40vh;
+  width: 100%;
+  /* margin-bottom: 1.5rem; */
+  border-radius: 10px;
+}
+
+/* .img-div{
+  height: 50%;
+  border-radius: 10px;
+} */
+
+.user{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 5rem;
+  border: #000000 solid 2px;
+  width: fit-content;
+  padding: 2rem;
+  margin-left: 2rem;
+
+}
+
+.detail{
+  font-size: 1.5rem;
+}
+.user-details{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.detail-flex{
+  display: flex;
+  flex-direction: row;
+}
+
+#write{
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  border: #000000 solid 1px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 3vh;
+  padding: 1.5rem;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 3vh;
+}
+
+.text{
+  color: grey;
+  font-size: 1.5rem;
+  margin-left: 0.7rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.actions{
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-family: var(--maintext);
+}
+
+#comment-btn{
+  cursor: pointer;
+}
+
+#comments{
+  margin-top: 2vh;
+  /* background-color: aliceblue; */
+  width: 100%;
+}
+
+#comments input{
+  margin-top: 0.7rem;
+  padding: 1rem;
+  width: 200%;
+  height: 1vh;
+}
+.article-flex{
+  padding: 2rem;
+  width: 100%;
+}
+
+.like{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(207, 207, 207);
+  margin: 0;
+justify-content: space-around;
+  align-items:center;
+  padding: 2rem;
+  /* margin-right: 5vh; */
+}
+
+.btn-like{
+  margin-top: 3vh;
+  flex: 1;
+  height: 5vh;
+}
+
+.btn-dislike{
+  flex: 1;
+}
+
+.icon{
+  margin-right: 1rem;
+}
+
+.comment-name{
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+}
+
+.comment-content{
+  margin-left: 2.2rem;
+  font-size: 1.4rem;
+  font-family: "Noto Sans Vithkuqi", sans-serif;
+
+}
+
+.input{
+  display: flex;
+  /* width: 200%; */
+}
+
+
+
+
+
+/* CSS */
+.button-4 {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  width: 10vh;
+  height: 4vh;
+  margin-left: 1.5rem;
+  margin-top: 0.7rem;
+}
+.button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.button-4:focus {
+  outline: 1px transparent;
+}
+
+.button-4:before {
+  display: none;
+}
+
+.button-4:-webkit-details-marker {
+  display: none;
+}
+
+.new-div{
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10vh;
+  width: 80%;
+}
+
+.new-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-1{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+  /* margin: 2rem; */
+  /* padding: 2rem; */
+}
+
+label{
+  font-family: "Borel", cursive;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+}
+
+.tags-inout{
+  height: 5vh;
+  font-size: 2rem;
+}
